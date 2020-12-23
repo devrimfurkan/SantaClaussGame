@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".GameScreen">
+
+    <ImageView
+        android:id="@+id/mainCharacter"
+        android:layout_width="119dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginBottom="291dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/idle" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="22dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="215dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/hat"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+        app:srcCompat="@drawable/hat"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="4dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/candy"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        app:srcCompat="@drawable/lolipop"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="73dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/enemy"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        app:srcCompat="@drawable/enemy"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="153dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="102dp"
+        android:text="Tap To Play!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
